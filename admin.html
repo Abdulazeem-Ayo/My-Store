@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | Haryobhamhi Store</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="admin-header">
+
+        <div class="logo">
+            HARYOBHAMHI STORE
+        </div>
+
+        <h2>
+            Admin Dashboard
+        </h2>
+
+        <div class="admin-header-actions">
+
+            <a href="index.html">
+                View Store
+            </a>
+
+            <button
+                id="logout-button"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="admin-page">
+
+        <section class="admin-title">
+
+            <h1>
+                Orders
+            </h1>
+
+            <p>
+                Manage your customer orders.
+            </p>
+
+        </section>
+
+
+        <!-- STATS -->
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <span>
+                    Total Orders
+                </span>
+
+                <strong id="total-orders">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <span>
+                    Pending Orders
+                </span>
+
+                <strong id="pending-orders">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <span>
+                    Completed Orders
+                </span>
+
+                <strong id="completed-orders">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <span>
+                    Total Sales
+                </span>
+
+                <strong id="total-sales">
+                    ₦0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDERS -->
+
+        <section class="admin-orders">
+
+            <div class="admin-orders-header">
+
+                <h2>
+                    Recent Orders
+                </h2>
+
+                <button
+                    id="refresh-orders"
+                    class="refresh-btn"
+                >
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <div id="orders-container">
+
+                <p>
+                    Loading orders...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
